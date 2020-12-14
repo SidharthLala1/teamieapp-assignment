@@ -39,15 +39,17 @@ We can configure project options in the [../cypress.json](../cypress.json) file,
 
 Please update the username and password in the cypress.env.json file. The credentials are deleted from the file so that they are not exposed to any external entity.  
 
-# For Active user please use the below variables:
+# `For Active user please use the below variables in cypress.env.json`:
 
-"username" : ""
-"password" : ""
+### "username" : ""
 
-# For Blocked user please use the below variables:
+### "password" : ""
 
-"blocked_username" : ""
-"blocked_password" : ""
+# `For Blocked user please use the below variables in cypress.env.json`:
+
+### "blocked_username" : ""
+
+### "blocked_password" : ""
 
 ## How to run a Cypress test Browser Mode and HeadLess Mode.
 
