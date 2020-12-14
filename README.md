@@ -10,6 +10,10 @@ As we know that Node.js is a JavaScript runtime environment and Cypress being a 
 
 The project has a file which has all its dependencies. So, npm install should install the dependencies which are required for this project.
 
+# Npm install will look at package.json file and will install all the required dependencies.
+
+- npm install
+
 # Cypress Installation
 
 Install Cypress via npm
@@ -40,10 +44,6 @@ npm run cy:open
 # Headless Mode:
 
 npm run cy:run
-
-# Run TestSuite on Sanbox
-
-npm run cy:run:sandbox
 
 ## Server setup and installing Cypress dependencies
 
