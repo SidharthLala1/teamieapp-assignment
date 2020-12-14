@@ -24,7 +24,6 @@ describe('Testing login feature for active and blocked user on teamieapp for dif
 			}
 
 			cy.visit(Cypress.config().baseUrl)
-			cy.screenshot()
 			cy.get('.site-slogan', { timeout: 50000 })
 				.should('exist')
 				.should('have.text', 'The Collaborative Learning Network')
@@ -77,7 +76,7 @@ describe('Testing login feature for active and blocked user on teamieapp for dif
 			cy.get('.btn.btn-sm.btn-default').eq(1).should('exist')
 			cy.get('.btn.btn-sm.btn-default').should('exist')
 			cy.url().should('deep.equal', `${Cypress.config().baseUrl}dash/#/`)
-			cy.screenshot()
+			cy.screenshot({ timeout: 50000 })
 		})
 
 		it('Should not allow blocked user to login', () => {
@@ -87,7 +86,6 @@ describe('Testing login feature for active and blocked user on teamieapp for dif
 				cy.viewport(size)
 			}
 			cy.visit(Cypress.config().baseUrl)
-			cy.screenshot()
 			cy.get('input[placeholder="Username or Email"]', { timeout: 50000 })
 				.should('exist')
 				.click()
@@ -103,7 +101,7 @@ describe('Testing login feature for active and blocked user on teamieapp for dif
 					'have.text',
 					'\nError message\nSorry, unrecognized username or password. Have you forgotten your password?×'
 				)
-			cy.screenshot()
+				cy.screenshot({ timeout: 50000 })
 		})
 	})
 })
