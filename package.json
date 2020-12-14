@@ -27,9 +27,9 @@
 		"prettier": "^2.0.5"
 	},
 	"bugs": {
-		"url": ""
+		"url": "https://github.com/SidharthLala1/teamieapp-assignment.git"
 	},
-	"homepage": "https://github.com/SidharthLala1/teamieapp-assignment/blob/main/README.md	",
+	"homepage": "https://github.com/SidharthLala1/teamieapp-assignment/blob/main/README.md",
 	"devDependencies": {
 		"@cypress/code-coverage": "^3.8.1",
 		"@percy/cypress": "^2.3.1",
