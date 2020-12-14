@@ -35,6 +35,20 @@ These folders hold end-to-end tests and supporting files for the Cypress Test Ru
 
 We can configure project options in the [../cypress.json](../cypress.json) file, see [Cypress configuration doc](https://on.cypress.io/configuration).
 
+## `cypress.env.json` file
+
+Please update the username and password in the cypress.env.json file. The credentials are deleted from the file so that they are not exposed to any external entity.  
+
+# For Active user please use the below variables:
+
+"username" : ""
+"password" : ""
+
+# For Blocked user please use the below variables:
+
+"blocked_username" : ""
+"blocked_password" : ""
+
 ## How to run a Cypress test Browser Mode and HeadLess Mode.
 
 # Browser Mode:
